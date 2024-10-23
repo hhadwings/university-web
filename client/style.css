@@ -23,6 +23,8 @@ html, body {
     justify-content: space-between;
     padding: 50px;
     background-color: rgb(140, 71, 105);
+
+    transition-duration: 300ms;
 }
 
 .header__title {
@@ -124,4 +126,31 @@ html, body {
     background-color: rgb(198, 79, 138);
     font-size: 2rem;
     text-transform: uppercase;
+}
+
+.text {
+    font-size: 20px;
+    opacity: 0;
+    transition-duration: 200ms;
+}
+
+.text-visible {
+    opacity: 1;
+}
+
+.change-color-btn {
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(242, 242, 242);
+    border: 2px dotted #000;
+    color: #000;
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+
+.change-color-btn:hover {
+    background-color: rgb(255, 255, 255);
 }
